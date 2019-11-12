@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css?family=Manjari&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Manjari", sans-serif;
+  color: white;
+}
+html {
+  background-image: url("images/lake-trees-forest-mountain-pillars-water-1590193-pxhere.com.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100%;
+}
+header {
+  padding: 5% 0 5% 0;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.5em;
+}
+#main-block,
+input[type="text"], #error-block {
+  background: darkslategray;
+  opacity: 0.8;
+  color: whitesmoke;
+}
+#main-block, #error-block {
+  width: fit-content;
+  margin: 0 auto;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 5%;
+  /* grid-template-columns: 1fr, 1fr, 1fr;
+  grid-template-rows: 50px, 50px, 50px; */
+  grid-gap: 35px;
+  display: none;
+}
+img {
+  grid-area: 1/1/1/1;
+}
+#temp-now {
+  grid-area: 1/2/1/2;
+  align-self: end;
+  justify-self: start;
+}
+#land {
+  grid-area: 1/3/1/3;
+  font-size: 3em;
+  text-align: end;
+}
+#wh {
+  grid-area: 2/2/2/2;
+  text-align: end;
+  font-size: 1.4em;
+}
+#clockAndDes {
+  grid-area: 2/3/2/3;
+  text-align: end;
+  font-size: 1.4em;
+}
+#temp {
+  grid-area: 3/1/3/4;
+}
+input[type="text"] {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 0.8em;
+  height: 40px;
+  width: fit-content;
+  text-shadow: 1p 1px darkslategray;
+  text-align: center;
+  margin-top: 30px;
+}
+table,
+td,
+th {
+  padding: 10px 0 10px 0;
+  text-align: end;
+}
+#temp-now {
+  font-size: 3em;
+}
+#des {
+  text-transform: capitalize;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 30px;
+  left: 30px;
+  right: -30px;
+  bottom: -30px;
+  background-color: cadetblue;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: cadetblue;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px cadetblue;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.logo{
+  position: relative;
+  left: 29px;
+  top: 40px;
+  color: cadetblue;
+  padding: 5px;
+  font-weight: bold;
+}
+.copyright{
+  position:absolute;
+  bottom: 0;
+  left:0;
+  right:0;
+  text-align:center;
+  width: 100%;
+  height: 100px;
+}
