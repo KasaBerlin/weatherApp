@@ -25,7 +25,7 @@ function start() {
   fetch(link)
     .then(response => response.json())
     .then(result => {
-      console.log(result)
+      // console.log(result)
       if (unit === "metric") {
         buildBlock(result);
       } else if (unit === "imperial") {
