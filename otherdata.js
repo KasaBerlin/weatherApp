@@ -13,6 +13,7 @@ export function buildBlockError(){
   errorBlock.innerHTML = "This location can not be found!"; 
   block.style.display="none";
 }
+
 export function buildBlock(result) {
   // display data field
   block.style.display = "grid";
