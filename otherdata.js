@@ -24,7 +24,7 @@ export function buildBlock(result) {
   min.innerHTML = `<th>Min</th>`;
 
   // filter img
-  let imgLink = `http://openweathermap.org/img/wn/${result.list[0].weather[0].icon}@2x.png`;
+  let imgLink = `https://openweathermap.org/img/wn/${result.list[0].weather[0].icon}@2x.png`;
   block.insertAdjacentHTML("afterbegin", `<img src=${imgLink}></img>`);
 
   // temperature now
@@ -77,7 +77,7 @@ export function buildBlockImperial(result) {
   min.innerHTML = `<th>Min</th>`;
 
   // filter img
-  let imgLink = `http://openweathermap.org/img/wn/${result.list[0].weather[0].icon}@2x.png`;
+  let imgLink = `https://openweathermap.org/img/wn/${result.list[0].weather[0].icon}@2x.png`;
   block.insertAdjacentHTML("afterbegin", `<img src=${imgLink}></img>`);
 
   // temperature now
