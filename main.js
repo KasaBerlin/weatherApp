@@ -19,13 +19,11 @@ input.addEventListener("click", e => {
 });
 
 function start() {
-  clockTicking();
   let link = `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/forecast?q=${input.value}&units=${unit}&APPID=3bc7d9fa9147ed9fcd0e449c0bfd2fca`;
-  // fetch
+
   fetch(link)
-    .then(response => response.json())
+    .then(response =>response.json())
     .then(result => {
-      // console.log(result)
       if (unit === "metric") {
         buildBlock(result);
       } else if (unit === "imperial") {
